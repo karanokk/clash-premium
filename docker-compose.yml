@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  clash-premium:
+    image: karanokk/clash-premium
+    privileged: true
+    volumes: 
+      - /root/.config/clash:/clash_premium
+    restart: always
